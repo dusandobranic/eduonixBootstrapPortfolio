@@ -1,3 +1,110 @@
-@import "/sass/variables";
-@import "/sass/vendor/bootstrap";
+@import "_variables.scss";
+@import "vendor/_bootstrap.scss";
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: $text-color;
+    background-color: $background-color;
+    font-size: $font-m;
+}
+
+h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.4em;
+    font-size: 1.5em;
+}
+
+.row{
+    margin-bottom: 30px;
+}
+
+.primary,
+strong,
+h2 {
+    color: $primary-color;
+}
+
+.container-main {
+    background: #fff;
+    margin-top: 80px;
+    padding: 0 30px 30px 30px;
+}
+
+header {
+    overflow: auto;
+    min-height: 100px;
+
+    h1 {
+        margin: 0;
+        padding: 20px 0 0 0;
+        font-size: 2.2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        text-align: center;
+        line-height: 1.4em;
+    }
+}
+
+.profile-img {
+    width: 160px;
+    position: relative;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.line {
+    max-width: 100%;
+}
+
+.contact-list {
+    padding: 0;
+    margin: 0;
+
+    li {
+        list-style: none;
+        font-weight: bold;
+        line-height: 3.2em;
+    }
+
+    span {
+        display: block;
+        margin: 0;
+        padding: 0;
+        line-height: 0.1em;
+        margin-left: 37px;
+        font-size: 15px;
+        color: #ccc;
+    }
+}
+
+.media {
+    background: $background-color;
+    padding: 10px;
+    margin: 10px 0;
+
+    .media-left {
+        margin-right: 20px;
+        width: 10%;
+    }
+}
+
+.progress {
+    margin-bottom: 10px;
+}
+
+.work-list {
+    li {
+        list-style: none;
+        margin-bottom: 20px;
+    }
+}
+
+footer {
+    background-color: $primary-color;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
